@@ -1,0 +1,15 @@
+{
+  "bookings": 49,
+  "payments": 47,
+  "reviews": 24,
+  "properties": 18,
+  "locations": 6,
+  "dates": 378,
+  "revenue_completed": 18719.0,
+  "rating_avg": 4.5,
+  "booking_value": 20776.0,
+  "completed_bookings": 36,
+  "dim_count": 8,
+  "fact_count": 3,
+  "relationship_count": 20
+}
