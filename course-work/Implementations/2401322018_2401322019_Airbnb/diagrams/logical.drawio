@@ -1,0 +1,836 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="logical-airbnb" name="Logical model">
+    <mxGraphModel dx="1540" dy="1520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1540" pageHeight="1520" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Airbnb — Logical data model" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="840" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Crow’s Foot notation · SQL Server" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="340" y="62" width="840" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries" value="Countries" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="400" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Countries">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Countries">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryID_name" value="CountryID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="Countries">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Countries">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Countries">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_Name_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Countries">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_Name_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Countries">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_Name_name" value="Name" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Countries">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_Name_type" value="nvarchar(100)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Countries">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_Name_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Countries">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryCode_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Countries">
+          <mxGeometry x="0" y="82" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryCode_key" value="UQ" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Countries">
+          <mxGeometry x="0" y="82" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryCode_name" value="CountryCode" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Countries">
+          <mxGeometry x="58" y="82" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryCode_type" value="char(2)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Countries">
+          <mxGeometry x="235" y="82" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Countries_CountryCode_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Countries">
+          <mxGeometry x="367" y="82" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities" value="Cities" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="150" width="400" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CityID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Cities">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CityID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Cities">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CityID_name" value="CityID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="Cities">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CityID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Cities">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CityID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Cities">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CountryID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Cities">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CountryID_key" value="FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Cities">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CountryID_name" value="CountryID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Cities">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CountryID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Cities">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_CountryID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Cities">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_Name_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Cities">
+          <mxGeometry x="0" y="82" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_Name_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Cities">
+          <mxGeometry x="0" y="82" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_Name_name" value="Name" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Cities">
+          <mxGeometry x="58" y="82" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_Name_type" value="nvarchar(100)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Cities">
+          <mxGeometry x="235" y="82" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_Name_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Cities">
+          <mxGeometry x="367" y="82" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cities_note" value="UQ (CountryID, Name)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#f5f5f5;strokeColor=#e1e5eb;align=left;spacingLeft=8;fontSize=11;fontColor=#555555;" vertex="1" parent="Cities">
+          <mxGeometry x="0" y="108" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes" value="PropertyTypes" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="150" width="400" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_PropertyTypeID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_PropertyTypeID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_PropertyTypeID_name" value="PropertyTypeID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_PropertyTypeID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_PropertyTypeID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_Name_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_Name_key" value="UQ" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_Name_name" value="Name" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_Name_type" value="nvarchar(50)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyTypes_Name_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="PropertyTypes">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users" value="Users" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="450" width="400" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_UserID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_UserID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_UserID_name" value="UserID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="Users">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_UserID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Users">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_UserID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Users">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_FirstName_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_FirstName_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_FirstName_name" value="FirstName" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Users">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_FirstName_type" value="nvarchar(50)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Users">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_FirstName_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Users">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_LastName_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="82" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_LastName_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="82" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_LastName_name" value="LastName" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Users">
+          <mxGeometry x="58" y="82" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_LastName_type" value="nvarchar(50)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Users">
+          <mxGeometry x="235" y="82" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_LastName_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Users">
+          <mxGeometry x="367" y="82" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Email_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="108" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Email_key" value="UQ" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="108" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Email_name" value="Email" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Users">
+          <mxGeometry x="58" y="108" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Email_type" value="nvarchar(254)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Users">
+          <mxGeometry x="235" y="108" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Email_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Users">
+          <mxGeometry x="367" y="108" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Phone_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="134" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Phone_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="134" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Phone_name" value="Phone" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Users">
+          <mxGeometry x="58" y="134" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Phone_type" value="varchar(25)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Users">
+          <mxGeometry x="235" y="134" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_Phone_null" value="*" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Users">
+          <mxGeometry x="367" y="134" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_CreatedAt_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="160" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_CreatedAt_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Users">
+          <mxGeometry x="0" y="160" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_CreatedAt_name" value="CreatedAt" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Users">
+          <mxGeometry x="58" y="160" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_CreatedAt_type" value="datetime2(0)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Users">
+          <mxGeometry x="235" y="160" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Users_CreatedAt_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Users">
+          <mxGeometry x="367" y="160" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties" value="Properties" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="450" width="400" height="264" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyID_name" value="PropertyID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_HostID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_HostID_key" value="FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_HostID_name" value="HostID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_HostID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_HostID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_CityID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="82" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_CityID_key" value="FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="82" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_CityID_name" value="CityID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="82" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_CityID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="82" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_CityID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="82" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyTypeID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="108" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyTypeID_key" value="FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="108" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyTypeID_name" value="PropertyTypeID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="108" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyTypeID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="108" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PropertyTypeID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="108" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Title_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="134" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Title_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="134" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Title_name" value="Title" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="134" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Title_type" value="nvarchar(150)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="134" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Title_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="134" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Address_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="160" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Address_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="160" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Address_name" value="Address" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="160" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Address_type" value="nvarchar(250)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="160" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Address_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="160" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Capacity_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="186" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Capacity_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="186" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Capacity_name" value="Capacity" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="186" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Capacity_type" value="smallint" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="186" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Capacity_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="186" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PricePerNight_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="212" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PricePerNight_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="212" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PricePerNight_name" value="PricePerNight" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="212" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PricePerNight_type" value="decimal(10,2)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="212" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_PricePerNight_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="212" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Description_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="238" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Description_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Properties">
+          <mxGeometry x="0" y="238" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Description_name" value="Description" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Properties">
+          <mxGeometry x="58" y="238" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Description_type" value="nvarchar(2000)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Properties">
+          <mxGeometry x="235" y="238" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Properties_Description_null" value="*" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Properties">
+          <mxGeometry x="367" y="238" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities" value="PropertyAmenities" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="470" width="400" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_PropertyID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_PropertyID_key" value="PK, FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_PropertyID_name" value="PropertyID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_PropertyID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_PropertyID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_AmenityID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_AmenityID_key" value="PK, FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_AmenityID_name" value="AmenityID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_AmenityID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_AmenityID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PropertyAmenities_note" value="Composite PK (PropertyID, AmenityID)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#f5f5f5;strokeColor=#e1e5eb;align=left;spacingLeft=8;fontSize=11;fontColor=#555555;" vertex="1" parent="PropertyAmenities">
+          <mxGeometry x="0" y="82" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities" value="Amenities" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="730" width="400" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_AmenityID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Amenities">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_AmenityID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Amenities">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_AmenityID_name" value="AmenityID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="Amenities">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_AmenityID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Amenities">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_AmenityID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Amenities">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_Name_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Amenities">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_Name_key" value="UQ" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Amenities">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_Name_name" value="Name" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Amenities">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_Name_type" value="nvarchar(80)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Amenities">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Amenities_Name_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Amenities">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings" value="Bookings" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="950" width="400" height="316" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_BookingID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_BookingID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_BookingID_name" value="BookingID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_BookingID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_BookingID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_PropertyID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_PropertyID_key" value="FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_PropertyID_name" value="PropertyID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_PropertyID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_PropertyID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="82" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestID_key" value="FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="82" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestID_name" value="GuestID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="82" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="82" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="82" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckInDate_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="108" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckInDate_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="108" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckInDate_name" value="CheckInDate" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="108" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckInDate_type" value="date" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="108" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckInDate_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="108" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckOutDate_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="134" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckOutDate_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="134" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckOutDate_name" value="CheckOutDate" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="134" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckOutDate_type" value="date" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="134" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CheckOutDate_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="134" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestCount_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="160" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestCount_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="160" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestCount_name" value="GuestCount" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="160" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestCount_type" value="smallint" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="160" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_GuestCount_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="160" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_Status_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="186" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_Status_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="186" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_Status_name" value="Status" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="186" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_Status_type" value="varchar(12)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="186" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_Status_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="186" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_AgreedNightlyPrice_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="212" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_AgreedNightlyPrice_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="212" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_AgreedNightlyPrice_name" value="AgreedNightlyPrice" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="212" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_AgreedNightlyPrice_type" value="decimal(10,2)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="212" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_AgreedNightlyPrice_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="212" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_TotalAmount_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="238" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_TotalAmount_key" value="C" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="238" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_TotalAmount_name" value="TotalAmount" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="238" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_TotalAmount_type" value="decimal(12,2)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="238" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_TotalAmount_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="238" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CreatedAt_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="264" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CreatedAt_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="264" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CreatedAt_name" value="CreatedAt" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Bookings">
+          <mxGeometry x="58" y="264" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CreatedAt_type" value="datetime2(0)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Bookings">
+          <mxGeometry x="235" y="264" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_CreatedAt_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Bookings">
+          <mxGeometry x="367" y="264" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Bookings_note" value="C: nights × AgreedNightlyPrice; persisted value" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#f5f5f5;strokeColor=#e1e5eb;align=left;spacingLeft=8;fontSize=11;fontColor=#555555;" vertex="1" parent="Bookings">
+          <mxGeometry x="0" y="290" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews" value="Reviews" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1110" width="400" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_ReviewID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_ReviewID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_ReviewID_name" value="ReviewID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="Reviews">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_ReviewID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Reviews">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_ReviewID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Reviews">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_BookingID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_BookingID_key" value="FK, UQ" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_BookingID_name" value="BookingID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Reviews">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_BookingID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Reviews">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_BookingID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Reviews">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Rating_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="82" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Rating_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="82" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Rating_name" value="Rating" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Reviews">
+          <mxGeometry x="58" y="82" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Rating_type" value="tinyint" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Reviews">
+          <mxGeometry x="235" y="82" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Rating_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Reviews">
+          <mxGeometry x="367" y="82" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Comment_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="108" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Comment_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="108" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Comment_name" value="Comment" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Reviews">
+          <mxGeometry x="58" y="108" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Comment_type" value="nvarchar(2000)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Reviews">
+          <mxGeometry x="235" y="108" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_Comment_null" value="*" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Reviews">
+          <mxGeometry x="367" y="108" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_CreatedAt_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="134" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_CreatedAt_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Reviews">
+          <mxGeometry x="0" y="134" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_CreatedAt_name" value="CreatedAt" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Reviews">
+          <mxGeometry x="58" y="134" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_CreatedAt_type" value="datetime2(0)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Reviews">
+          <mxGeometry x="235" y="134" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Reviews_CreatedAt_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Reviews">
+          <mxGeometry x="367" y="134" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments" value="Payments" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;shape=swimlane;horizontal=1;startSize=30;rounded=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#6c8ebf;fontStyle=1;collapsible=0;container=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="990" width="400" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_PaymentID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="30" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_PaymentID_key" value="PK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="30" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_PaymentID_name" value="PaymentID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontStyle=1;" vertex="1" parent="Payments">
+          <mxGeometry x="58" y="30" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_PaymentID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Payments">
+          <mxGeometry x="235" y="30" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_PaymentID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Payments">
+          <mxGeometry x="367" y="30" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_BookingID_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="56" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_BookingID_key" value="FK" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="56" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_BookingID_name" value="BookingID" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Payments">
+          <mxGeometry x="58" y="56" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_BookingID_type" value="int" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Payments">
+          <mxGeometry x="235" y="56" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_BookingID_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Payments">
+          <mxGeometry x="367" y="56" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Amount_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="82" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Amount_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="82" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Amount_name" value="Amount" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Payments">
+          <mxGeometry x="58" y="82" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Amount_type" value="decimal(12,2)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Payments">
+          <mxGeometry x="235" y="82" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Amount_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Payments">
+          <mxGeometry x="367" y="82" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Status_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="108" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Status_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="108" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Status_name" value="Status" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Payments">
+          <mxGeometry x="58" y="108" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Status_type" value="varchar(12)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Payments">
+          <mxGeometry x="235" y="108" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Status_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Payments">
+          <mxGeometry x="367" y="108" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Method_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="134" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Method_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="134" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Method_name" value="Method" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Payments">
+          <mxGeometry x="58" y="134" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Method_type" value="varchar(20)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Payments">
+          <mxGeometry x="235" y="134" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_Method_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Payments">
+          <mxGeometry x="367" y="134" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_AttemptedAt_bg" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=#ffffff;strokeColor=#e1e5eb;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="160" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_AttemptedAt_key" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontSize=10;fontColor=#555555;" vertex="1" parent="Payments">
+          <mxGeometry x="0" y="160" width="58" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_AttemptedAt_name" value="AttemptedAt" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;" vertex="1" parent="Payments">
+          <mxGeometry x="58" y="160" width="177" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_AttemptedAt_type" value="datetime2(0)" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;fontColor=#444444;" vertex="1" parent="Payments">
+          <mxGeometry x="235" y="160" width="132" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Payments_AttemptedAt_null" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;spacingLeft=7;align=center;fontColor=#666666;" vertex="1" parent="Payments">
+          <mxGeometry x="367" y="160" width="33" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="countries_cities" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=1;exitY=0.39814814814814814;exitPerimeter=0;entryX=0;entryY=0.5149253731343284;entryPerimeter=0;" edge="1" parent="1" source="Countries" target="Cities">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="193" />
+              <mxPoint x="500" y="219" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cities_properties" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=0.5;exitY=1;exitPerimeter=0;entryX=0.5;entryY=0;entryPerimeter=0;" edge="1" parent="1" source="Cities" target="Properties">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="types_properties" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=0.5;exitY=1;exitPerimeter=0;entryX=0.85;entryY=0;entryPerimeter=0;" edge="1" parent="1" source="PropertyTypes" target="Properties">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="350" />
+              <mxPoint x="900" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="users_properties" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=1;exitY=0.3709677419354839;exitPerimeter=0;entryX=0;entryY=0.26136363636363635;entryPerimeter=0;" edge="1" parent="1" source="Users" target="Properties">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="properties_junction" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=1;exitY=0.16287878787878787;exitPerimeter=0;entryX=0;entryY=0.39814814814814814;entryPerimeter=0;" edge="1" parent="1" source="Properties" target="PropertyAmenities">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="493" />
+              <mxPoint x="1020" y="513" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="amenities_junction" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=0.5;exitY=0;exitPerimeter=0;entryX=0.5;entryY=1;entryPerimeter=0;" edge="1" parent="1" source="Amenities" target="PropertyAmenities">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="properties_bookings" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=0.5;exitY=1;exitPerimeter=0;entryX=0.5;entryY=0;entryPerimeter=0;" edge="1" parent="1" source="Properties" target="Bookings">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="users_bookings" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=0.5;exitY=1;exitPerimeter=0;entryX=0;entryY=0.30063291139240506;entryPerimeter=0;" edge="1" parent="1" source="Users" target="Bookings">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="870" />
+              <mxPoint x="500" y="870" />
+              <mxPoint x="500" y="1045" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bookings_payments" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToMany;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=1;exitY=0.3449367088607595;exitPerimeter=0;entryX=0;entryY=0.3709677419354839;entryPerimeter=0;" edge="1" parent="1" source="Bookings" target="Payments">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_reviews" value="" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;edgeStyle=none;rounded=0;startArrow=ERmandOne;startFill=0;startSize=12;endArrow=ERzeroToOne;endFill=0;endSize=12;strokeColor=#444444;strokeWidth=1.2;exitX=0;exitY=0.7246835443037974;exitPerimeter=0;entryX=1;entryY=0.43125;entryPerimeter=0;" edge="1" parent="1" source="Bookings" target="Reviews">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="PK = primary key    FK = foreign key    UQ = unique    C = computed column    * = NULL allowed" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1350" width="1440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="All other attributes are required. Currency: EUR. One guest and one host are roles of the same Users table." style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;fontSize=12;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1382" width="1440" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="authors" value="Християн Христов · 2401322018     |     Даниел Йорданов · 2401322019" style="html=0;fontFamily=Arial;fontSize=12;whiteSpace=wrap;fontColor=#000000;fillColor=none;strokeColor=none;align=left;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1420" width="1440" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
