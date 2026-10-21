@@ -1,0 +1,5 @@
+﻿PaymentStatusKey,PaymentStatusName
+1,Pending
+2,Completed
+3,Failed
+4,Refunded
