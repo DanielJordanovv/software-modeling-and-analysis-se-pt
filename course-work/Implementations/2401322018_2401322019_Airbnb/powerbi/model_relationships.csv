@@ -1,0 +1,21 @@
+﻿OneTable,OneColumn,ManyTable,ManyColumn,Relationship,Cardinality,CrossFilter
+DimDate,DateKey,FactBookings,BookingDateKey,Active,One-to-many (1:*),Single
+DimDate,DateKey,FactBookings,CheckInDateKey,Inactive,One-to-many (1:*),Single
+DimDate,DateKey,FactBookings,CheckOutDateKey,Inactive,One-to-many (1:*),Single
+DimDate,DateKey,FactPayments,PaymentDateKey,Active,One-to-many (1:*),Single
+DimDate,DateKey,FactReviews,ReviewDateKey,Active,One-to-many (1:*),Single
+DimProperty,PropertyKey,FactBookings,PropertyKey,Active,One-to-many (1:*),Single
+DimProperty,PropertyKey,FactPayments,PropertyKey,Active,One-to-many (1:*),Single
+DimProperty,PropertyKey,FactReviews,PropertyKey,Active,One-to-many (1:*),Single
+DimGuest,GuestKey,FactBookings,GuestKey,Active,One-to-many (1:*),Single
+DimGuest,GuestKey,FactPayments,GuestKey,Active,One-to-many (1:*),Single
+DimGuest,GuestKey,FactReviews,GuestKey,Active,One-to-many (1:*),Single
+DimHost,HostKey,FactBookings,HostKey,Active,One-to-many (1:*),Single
+DimHost,HostKey,FactPayments,HostKey,Active,One-to-many (1:*),Single
+DimHost,HostKey,FactReviews,HostKey,Active,One-to-many (1:*),Single
+DimLocation,LocationKey,FactBookings,LocationKey,Active,One-to-many (1:*),Single
+DimLocation,LocationKey,FactPayments,LocationKey,Active,One-to-many (1:*),Single
+DimLocation,LocationKey,FactReviews,LocationKey,Active,One-to-many (1:*),Single
+DimBookingStatus,BookingStatusKey,FactBookings,BookingStatusKey,Active,One-to-many (1:*),Single
+DimPaymentMethod,PaymentMethodKey,FactPayments,PaymentMethodKey,Active,One-to-many (1:*),Single
+DimPaymentStatus,PaymentStatusKey,FactPayments,PaymentStatusKey,Active,One-to-many (1:*),Single

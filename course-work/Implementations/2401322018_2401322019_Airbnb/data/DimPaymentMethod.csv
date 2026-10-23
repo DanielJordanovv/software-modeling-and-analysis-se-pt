@@ -1,0 +1,4 @@
+﻿PaymentMethodKey,PaymentMethodName
+1,Card
+2,PayPal
+3,BankTransfer

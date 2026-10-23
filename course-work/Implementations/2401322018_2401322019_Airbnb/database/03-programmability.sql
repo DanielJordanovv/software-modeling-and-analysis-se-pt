@@ -52,6 +52,9 @@ BEGIN
     IF @CheckOutDate <= @CheckInDate
         THROW 50001, 'Check-out date must be after check-in date.', 1;
 
+    IF @CheckInDate < CAST(GETDATE() AS DATE)
+        THROW 50007, 'Check-in date cannot be in the past.', 1;
+
     IF NOT EXISTS (SELECT 1 FROM Properties WHERE PropertyId = @PropertyId)
         THROW 50002, 'Property does not exist.', 1;
 
@@ -93,6 +96,8 @@ BEGIN
 
     IF EXISTS (SELECT 1 FROM Bookings WHERE BookingId = @BookingId AND Status IN ('Cancelled', 'Completed'))
         THROW 50012, 'Only pending or confirmed bookings can be cancelled.', 1;
+
+    SET XACT_ABORT ON;
 
     BEGIN TRANSACTION;
 

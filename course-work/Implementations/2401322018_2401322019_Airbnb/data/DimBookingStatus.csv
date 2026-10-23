@@ -1,0 +1,5 @@
+﻿BookingStatusKey,BookingStatusName
+1,Pending
+2,Confirmed
+3,Completed
+4,Cancelled
