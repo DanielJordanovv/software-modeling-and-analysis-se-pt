@@ -117,7 +117,7 @@
 | 6 | `warehouse/03-validate-warehouse.sql` | Проверява DW и показва броя редове |
 | 7 | `tests/01-programmability-tests.sql` | По желание: тества процедурите, функциите и тригерите и връща всички промени назад |
 
-3. Отворете `powerbi/Airbnb_Analytics.pbix` и натиснете **Refresh**.
+3. Отворете `powerbi/Airbnb_Analytics.pbix` и обновете данните от `AirbnbDB` по стъпките в [powerbi/README.md](powerbi/README.md).
 
 С `sqlcmd` от папката на проекта:
 

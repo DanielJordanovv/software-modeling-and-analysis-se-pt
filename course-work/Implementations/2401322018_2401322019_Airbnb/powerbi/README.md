@@ -20,9 +20,21 @@
 1. Инсталирайте **Power BI Desktop** (Windows).
 2. Изпълнете SQL скриптовете от главния README, включително `warehouse/01` и `warehouse/02`.
 3. Отворете `Airbnb_Analytics.pbix` чрез **File → Open**.
-4. Ако SQL Server не е на `localhost`, сменете източника от **Transform data → Data source settings → Change Source**.
-5. Натиснете **Home → Refresh**, за да заредите данните от `AirbnbDB`.
+4. Отворете **Transform data → Data source settings → Change Source** и задайте сървъра (`localhost` или `.\SQLEXPRESS`) и база `AirbnbDB`.
+5. В Power Query редактора натиснете **Close & Apply**, после **Home → Refresh**.
 6. Използвайте филтрите **Държава**, **Град**, **Тип имот** и **Година**.
+
+### Проверка след обновяване
+
+При данните от `database/02-insert-data.sql` отчетът трябва да показва:
+
+| Показател | Стойност |
+|---|---|
+| Total Bookings | 60 |
+| Collected Revenue | 25 357,50 |
+| Average Rating | 3,85 (33 отзива) |
+| Total Listings | 20 |
+| Статуси | Completed 46 · Cancelled 7 · Confirmed 6 · Pending 1 |
 
 Ако нямате SQL Server, таблиците могат да се импортират от `../data/` чрез **Get data → Text/CSV**.
 
