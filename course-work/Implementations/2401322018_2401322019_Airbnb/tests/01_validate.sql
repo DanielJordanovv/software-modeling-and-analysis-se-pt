@@ -50,7 +50,7 @@ IF (SELECT COUNT(*) FROM dw.FactReviews) <> (SELECT COUNT(*) FROM dbo.Reviews)
     THROW 50208, N'Review warehouse reconciliation failed.', 1;
 IF (SELECT COALESCE(SUM(BookingAmount),0) FROM dw.FactBookings) <> (SELECT COALESCE(SUM(TotalAmount),0) FROM dbo.Bookings)
     THROW 50209, N'Booking amount warehouse reconciliation failed.', 1;
-SELECT N'Countries' AS Item, COUNT(*) AS RowCount FROM dbo.Countries
+SELECT N'Countries' AS Item, COUNT(*) AS [RowCount] FROM dbo.Countries
 UNION ALL SELECT N'Cities', COUNT(*) FROM dbo.Cities
 UNION ALL SELECT N'Users', COUNT(*) FROM dbo.Users
 UNION ALL SELECT N'Properties', COUNT(*) FROM dbo.Properties
