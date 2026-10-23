@@ -44,7 +44,7 @@ IF EXISTS (
 )
     THROW 51010, N'Review fact values do not match source.', 1;
 
-SELECT N'DimDate' AS TableName, COUNT_BIG(*) AS RowCount FROM dw.DimDate
+SELECT N'DimDate' AS TableName, COUNT_BIG(*) AS [RowCount] FROM dw.DimDate
 UNION ALL SELECT N'DimGuest', COUNT_BIG(*) FROM dw.DimGuest
 UNION ALL SELECT N'DimHost', COUNT_BIG(*) FROM dw.DimHost
 UNION ALL SELECT N'DimProperty', COUNT_BIG(*) FROM dw.DimProperty
