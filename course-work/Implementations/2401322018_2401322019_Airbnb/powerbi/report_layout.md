@@ -1,32 +1,43 @@
-# Airbnb Analytics — Power BI report specification
+# Airbnb Analytics — подредба на Power BI доклада
 
-## Page 1 — Overview
+Този файл описва актуалната страница **Airbnb Analytics** в `Airbnb_Analytics.pbix`. Докладът работи с импортирани таблици на Data Warehouse от папка `data/`.
 
-| Visual | Power BI visual | Axis / Category | Value / Legend |
-|---|---|---|---|
-| 1. Нови резервации по месеци | Line chart | DimDate[YearNumber], DimDate[MonthNumber] | [Total Bookings] |
-| 2. Плащания по град | Clustered bar chart | DimLocation[CityName] | [Collected Revenue] |
-| 3. Статуси на резервациите | Donut chart | DimBookingStatus[BookingStatusName] | [Total Bookings] |
-| 4. Средна оценка по град | Clustered column chart | DimLocation[CityName] | [Average Rating] |
-| 5. Видове имоти | Donut chart | DimProperty[PropertyType] | [Total Listings] |
-| 6. Приходи по начин на плащане | Clustered bar chart | DimPaymentMethod[PaymentMethodName] | [Collected Revenue] |
+## Основни показатели
 
-Cards: [Total Bookings], [Collected Revenue], [Average Rating], [Total Listings].
+| KPI | Използвана DAX мярка | Смисъл |
+|---|---|---|
+| Резервации | `[Total Bookings]` | Брой резервации |
+| Получени приходи | `[Collected Revenue]` | Плащания със статус `Completed` |
+| Средна оценка | `[Average Rating]` | Средна оценка от отзивите |
+| Имоти | `[Listings by Location]` | Уникални имоти с резервации при избраните филтри |
 
-Slicers: DimLocation[CountryName], DimLocation[CityName], DimProperty[PropertyType], DimDate[YearNumber].
+`[Total Listings]` е допълнителна мярка за всички имоти в `DimProperty` и не е мярката на четвъртата KPI карта в актуалния `.pbix`.
 
-## Model
+## Визуализации
 
-20 отношения са изброени в `model_relationships.csv`. Измеренията имат еднопосочни 1:* връзки с фактите. При `FactBookings` активна датова връзка е `BookingDateKey`. `CheckInDateKey` и `CheckOutDateKey` са неактивни; при нужда се активират за определена мярка с USERELATIONSHIP. Една и съща DimDate активна връзка към FactPayments/PaymentDateKey и FactReviews/ReviewDateKey филтрира всяка метрика по нейната дата.
+| № | Графика | Визуален елемент | Категория/ос | Мярка |
+|---|---|---|---|---|
+| 1 | Динамика на резервациите | Line chart | `DimDate[YearMonth]` | `[Total Bookings]` |
+| 2 | Получени приходи по град | Clustered bar | `DimLocation[CityName]` | `[Collected Revenue]` |
+| 3 | Статус на резервациите | Donut | `DimBookingStatus[BookingStatusName]` | `[Total Bookings]` |
+| 4 | Средна оценка по град | Clustered column | `DimLocation[CityName]` | `[Average Rating]` |
+| 5 | Имотен портфейл по тип | Donut | `DimProperty[PropertyType]` | `[Listings by Location]` |
+| 6 | Приходи по метод на плащане | Clustered bar | `DimPaymentMethod[PaymentMethodName]` | `[Collected Revenue]` |
 
-## Financial definition
+Към диаграмата за типовете имоти е добавена `[Total Listings]` като допълнителна информация в tooltip, докато основната стойност за секторите е `[Listings by Location]`.
 
-[Booking Value] означава заявена стойност на всички резервации (включва отменени, изчакващи и потвърдени). [Collected Revenue] означава сума само от завършени плащания. Различни измерители са и не трябва да се сумират.
+## Филтри и бутони
 
-## Field settings
+Използвани са четири Slicer филтъра: `DimLocation[CountryName]`, `DimLocation[CityName]`, `DimProperty[PropertyType]` и `DimDate[YearNumber]`. Бутонът за изчистване извиква bookmark `Reset Filters` (в режим на редактиране — `Ctrl + Click`).
 
-DimDate[FullDate] → Date. DimDate[YearNumber], [MonthNumber], DateKey and all foreign keys → Whole number. Money fields → Decimal number, two decimal places. [Cancellation Rate] → Percentage. [Average Rating] → two decimal places. Сортирайте `DimDate[MonthName]` по `DimDate[MonthNumber]`. Ако се използват йерархии по дата, избягвайте показване само на месец без година.
+## Връзки и време
 
-## Expected sample totals
+Моделът е описан в `model_relationships.csv`: 20 връзки `1:*`, еднопосочни, от които 18 активни и 2 неактивни. За резервациите активната връзка с `DimDate` използва `BookingDateKey`; `CheckInDateKey` и `CheckOutDateKey` са неактивни. По подразбиране месечната диаграма групира резервациите по дата на създаване, а не по дата на настаняване.
 
-Примерните данни съдържат 60 резервации, 80 плащания и 33 отзива. Показаните приходи зависят от статуса на всяко плащане.
+Колоната `DimDate[YearMonth]` е изчислена с `FORMAT(DimDate[FullDate], "yyyy-MM")`.
+
+## Данни и смисъл на сумите
+
+`[Booking Value]` е стойността на създадените резервации, независимо от статуса, докато `[Collected Revenue]` включва само завършените плащания. Тези величини не са взаимозаменяеми. Валутата в основната схема не е дефинирана; използват се условни парични единици.
+
+CSV файловете са създадени от SQL Data Warehouse. Готовият `.pbix` ползва локални CSV източници; `powerbi/queries/*.m` са отделни алтернативни заявки към SQL Server и при директно използване изискват промяна на инстанцията (в примерите е `localhost`).

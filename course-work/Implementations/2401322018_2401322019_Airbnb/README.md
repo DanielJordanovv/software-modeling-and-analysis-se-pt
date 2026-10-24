@@ -1,151 +1,159 @@
-# Airbnb
+# Airbnb — курсова работа по софтуерно моделиране и анализ
 
-Курсова работа по „Софтуерно моделиране и анализ“.
+**Изготвили:**
+- Християн Христов — ф.н. 2401322018
+- Даниел Йорданов — ф.н. 2401322019
 
-## Екип
+## За проекта
 
-| Име | Факултетен номер | Част |
-| --- | --- | --- |
-| Даниел Йорданов | 2401322019 | Концептуален и логически модел, база данни, процедури, функции, тригери |
-| Християн Христов | 2401322018 | Data Warehouse модел и скриптове, Power BI и HTML доклад |
+Разработката представя модел на платформа за краткосрочно настаняване по примера на Airbnb. Целта е да се проследи пътят от моделирането на данните до реализацията на релационна база, хранилище за аналитични данни и интерактивен отчет.
 
-## Описание
+В модела потребителите могат да бъдат домакини или гости. Домакините публикуват имоти с местоположение, тип, капацитет, цена и удобства. Гостите правят резервации, за които се съхраняват статус, дати и плащания. След приключил престой може да бъде оставен отзив с оценка.
 
-Проектът моделира платформата Airbnb. Потребителите могат да бъдат домакини, които публикуват имоти, и гости, които ги резервират. Всеки имот има град, тип, удобства и снимки. Към резервациите има плащания и най-много едно ревю след приключил престой.
+Проектът използва учебни примерни данни и не е свързан с реалната платформа Airbnb. Паричните стойности са в условни единици.
 
-Пътят на данните е: **модели → релационна база `AirbnbDB` → Data Warehouse (схема `dw`) → Power BI доклад**.
+## Използвани технологии
 
-## Структура
+- **diagrams.net (draw.io)** — концептуален, логически и Data Warehouse модел;
+- **Microsoft SQL Server (T-SQL)** — таблици, ограничения, процедури, функции, тригери и изгледи;
+- **Power BI Desktop** — аналитичен модел, DAX мерки и визуализации;
+- **HTML, JavaScript и Plotly** — допълнителен уеб вариант на аналитичния доклад.
+
+## Структура на проекта
 
 ```text
 2401322018_2401322019_Airbnb/
-├── README.md
-├── models/
-│   ├── conceptual-model.drawio / .png       концептуален модел (Chen)
-│   ├── logical-model.drawio / .png          логически модел (Crow's Foot)
-│   └── data-warehouse-model.drawio / .png   Data Warehouse модел (UML)
 ├── database/
-│   ├── 01-create-tables.sql
-│   ├── 02-insert-data.sql
-│   └── 03-programmability.sql
+│   ├── 01_create_database.sql
+│   ├── 02_seed_data.sql
+│   ├── 03_functions.sql
+│   ├── 04_procedures.sql
+│   ├── 05_triggers.sql
+│   └── 06_views.sql
+├── diagrams/
+│   ├── conceptual.drawio
+│   ├── conceptual.png
+│   ├── logical.drawio
+│   ├── logical.png
+│   ├── data_warehouse.drawio
+│   └── data_warehouse.png
 ├── warehouse/
-│   ├── 01-create-warehouse.sql
-│   ├── 02-load-warehouse.sql
-│   └── 03-validate-warehouse.sql
-├── tests/
-│   └── 01-programmability-tests.sql
+│   ├── 01_create_warehouse.sql
+│   ├── 02_load_warehouse.sql
+│   └── 03_validate_warehouse.sql
+├── data/
 ├── powerbi/
 │   ├── Airbnb_Analytics.pbix
-│   ├── README.md
 │   ├── measures.dax
 │   ├── model_relationships.csv
 │   ├── report_layout.md
+│   ├── source_queries.sql
 │   └── queries/
-├── data/                                    CSV експорт на DW таблиците
-└── dashboard/
-    ├── index.html                           HTML вариант на доклада
-    ├── plotly.min.js
-    ├── report_data.json
-    └── preview.png
+├── dashboard/
+│   ├── index.html
+│   ├── plotly.min.js
+│   ├── report_data.json
+│   ├── preview.png
+│   └── README.md
+├── tests/
+├── README_ANALYTICS.md
+└── README.md
 ```
 
-## Модели
+Папката `data/` съдържа CSV експорт на таблиците от аналитичния модел. В `tests/` се намират SQL скриптове за проверка на структурата и бизнес правилата.
 
-- **Концептуален модел (Chen):** 9 обекта, връзки с кардиналности и връзка много към много между `Properties` и `Amenities`.
-- **Логически модел (Crow's Foot):** 10 таблици и 50 колони с типове данни, PK, FK и UQ. Връзката много към много е реализирана чрез `PropertyAmenities`.
-- **Data Warehouse модел (UML):** 3 таблици факти и 8 таблици измерения, свързани с 20 външни ключа.
+## Модели на данните
 
-Файловете `.drawio` се отварят с [diagrams.net](https://app.diagrams.net/). PNG файловете са за бърз преглед.
+В папка `diagrams/` са представени трите използвани модела:
 
-## Релационна база `AirbnbDB`
+1. **Концептуален модел (Chen)** — основните обекти и отношенията между тях.
+2. **Логически модел (Crow's Foot)** — таблици, атрибути, първични и външни ключове и кардиналности.
+3. **Физически модел на Data Warehouse (UML Database)** — таблици факти, измерения и техните връзки.
+
+Файловете `.drawio` се отварят чрез [diagrams.net](https://app.diagrams.net/). PNG версиите са предназначени за бърз преглед в GitHub.
+
+## Релационна база данни
+
+Оперативната база съдържа 10 таблици:
 
 | Таблица | Съдържание |
-| --- | --- |
-| `Users` | Потребители, гости и домакини (`IsHost`) |
-| `Cities` | Градове и държави |
-| `PropertyTypes` | Типове имоти |
-| `Properties` | Обяви с домакин, град, тип, цена и капацитет |
-| `Amenities` | Удобства |
-| `PropertyAmenities` | Връзка много към много между имоти и удобства |
-| `PropertyImages` | Снимки на имотите |
-| `Bookings` | Резервации |
-| `Payments` | Плащания по резервациите |
-| `Reviews` | По едно ревю за резервация |
+|---|---|
+| `Users` | Потребители, които могат да бъдат гости и домакини |
+| `Countries`, `Cities` | Географски данни за имотите |
+| `PropertyTypes` | Видове имоти |
+| `Properties` | Обяви, цени, капацитет и информация за домакина |
+| `Amenities` | Видове удобства |
+| `PropertyAmenities` | Удобствата към конкретен имот |
+| `Bookings` | Резервации и периоди на престой |
+| `Payments` | Плащания, методи и статуси |
+| `Reviews` | Оценки и коментари за завършени престои |
 
-Данните са: 15 потребителя, 8 града, 5 типа имоти, 20 имота, 12 удобства, 60 резервации, 80 плащания и 33 ревюта. Обхващат 14 месеца (октомври 2025 – декември 2026).
+Връзката между `Properties` и `Amenities` е **много към много** и се реализира чрез `PropertyAmenities` със съставен първичен ключ.
 
-### Програмируеми обекти
+Бизнес логиката е отделена в SQL обекти:
 
-| Обект | Тип | Какво прави |
-| --- | --- | --- |
-| `fn_CalculateStayPrice` | функция | Връща цената за престой: брой нощувки × цена на нощувка. |
-| `fn_GetAverageRating` | функция | Връща средната оценка на имот от ревютата му. |
-| `sp_CreateBooking` | процедура | Създава резервация със статус `Pending`. Проверява датите, броя гости, че домакинът не резервира собствения си имот и че няма припокриване с друга резервация. |
-| `sp_CancelBooking` | процедура | Отказва резервация и маркира плащанията по нея като `Refunded`. |
-| `tr_Payments_ConfirmBooking` | тригер | Потвърждава резервацията, когато сумата на плащанията покрие цялата цена. |
-| `tr_Reviews_OnlyCompletedBookings` | тригер | Не позволява ревю за резервация, която не е приключила. |
+- **Процедури:** `sp_CreateBooking`, `sp_RecordPayment`, `sp_CancelBooking`, `sp_CompleteStay`, `sp_SearchAvailableProperties`.
+- **Функции:** `fn_GetBookingNights`, `fn_GetPropertyAverageRating`, `fn_GetPropertyRevenue`.
+- **Тригери:** `trg_Bookings_Validate`, `trg_Payments_Validate`, `trg_Reviews_Eligibility`.
+- **Изгледи:** `vw_PropertyOverview`, `vw_MonthlyRevenue`.
+
+Използвани са външни ключове, ограничения за допустими стойности и проверки за валидни резервации, плащания и отзиви.
+
+## Инсталиране и стартиране на базата
+
+Необходими са **SQL Server 2019 или по-нов** и **SQL Server Management Studio (SSMS)**.
+
+1. Изтеглете проекта от GitHub чрез **Code → Download ZIP** или го клонирайте с Git.
+2. Стартирайте SQL Server и отворете SSMS.
+3. Свържете се към инстанцията си на SQL Server (например `localhost` или `.\SQLEXPRESS`).
+4. Отворете последователно файловете от таблицата и изпълнете всеки чрез **Execute (F5)**:
+
+| Ред | Файл | Действие |
+|---:|---|---|
+| 1 | `database/01_create_database.sql` | Създава базата `AirbnbCoursework` и таблиците |
+| 2 | `database/02_seed_data.sql` | Добавя примерните данни |
+| 3 | `database/03_functions.sql` | Създава функциите |
+| 4 | `database/04_procedures.sql` | Създава процедурите |
+| 5 | `database/05_triggers.sql` | Създава тригерите |
+| 6 | `database/06_views.sql` | Създава изгледите |
+| 7 | `warehouse/01_create_warehouse.sql` | Създава Data Warehouse таблиците |
+| 8 | `warehouse/02_load_warehouse.sql` | Зарежда аналитичните данни |
+| 9 | `warehouse/03_validate_warehouse.sql` | Извежда проверки за аналитичния модел |
+
+Скриптовете за създаване и първоначално зареждане са предназначени за **нова база**. Не ги изпълнявайте повторно върху съществуваща инсталация, без да проверите текущите данни. Зареждането на Data Warehouse обновява аналитичните таблици от оперативната база.
+
+След инсталирането можете да разгледате данните с:
+
+```sql
+USE AirbnbCoursework;
+GO
+
+SELECT TOP (10) * FROM dbo.Properties;
+SELECT TOP (10) * FROM dbo.Bookings;
+SELECT TOP (10) * FROM dbo.Payments;
+SELECT TOP (10) * FROM dbo.Reviews;
+
+SELECT TOP (10) * FROM dw.FactBookings;
+SELECT TOP (10) * FROM dw.FactPayments;
+SELECT TOP (10) * FROM dw.FactReviews;
+```
+
+Допълнителните SQL скриптове в `tests/` са отделени от инсталацията и се изпълняват след зареждане на базата.
 
 ## Data Warehouse
 
-Таблиците са в схема `dw` на `AirbnbDB` и се зареждат от оперативните таблици със `warehouse/02-load-warehouse.sql`.
+Аналитичните таблици са организирани в схема `dw` на базата `AirbnbCoursework`.
 
-- **Факти:** `FactBookings`, `FactPayments`, `FactReviews`.
-- **Измерения:** `DimDate`, `DimGuest`, `DimHost`, `DimProperty`, `DimLocation`, `DimPaymentMethod`, `DimBookingStatus`, `DimPaymentStatus`.
+**Таблици факти:** `FactBookings`, `FactPayments`, `FactReviews`.
 
-## Power BI доклад
+**Таблици измерения:** `DimDate`, `DimGuest`, `DimHost`, `DimProperty`, `DimLocation`, `DimPaymentMethod`, `DimBookingStatus`, `DimPaymentStatus`.
 
-`powerbi/Airbnb_Analytics.pbix` съдържа 4 показателя, 6 визуализации и филтри по държава, град, тип имот и година. Как се отваря и обновява е описано в [powerbi/README.md](powerbi/README.md).
+Чрез този модел могат да се разглеждат резервации, приходи и оценки по време, местоположение, имот и статус. Зареждането на данните се извършва със `warehouse/02_load_warehouse.sql`.
 
-`dashboard/index.html` е HTML вариант на същия доклад. Отваря се директно в браузър, а `plotly.min.js` трябва да е в същата папка.
+## Аналитичен доклад
 
-![HTML доклад](dashboard/preview.png)
+Основният отчет се намира в `powerbi/Airbnb_Analytics.pbix` и се отваря с **Power BI Desktop**. Той включва четири основни показателя, шест графики и филтри по държава, град, тип имот и година. За да се разгледа отчетът, не е необходимо предварително да се стартира SQL Server, когато данните вече са записани във файла `.pbix`. За обновяването им може да се наложи настройване на източника.
 
-## Инсталация и стартиране
+Подробностите за полетата, мерките и работата с отчета са в [README_ANALYTICS.md](README_ANALYTICS.md).
 
-Изисквания: **MS SQL Server 2019** или по-нов и **SQL Server Management Studio** (или Azure Data Studio / `sqlcmd`). За доклада трябва **Power BI Desktop**.
-
-1. Клонирайте репото и отворете папката `course-work/Implementations/2401322018_2401322019_Airbnb`.
-2. Изпълнете скриптовете по ред (в SSMS: **File → Open**, после **Execute**):
-
-| Ред | Файл | Действие |
-| ---: | --- | --- |
-| 1 | `database/01-create-tables.sql` | Създава базата `AirbnbDB` и таблиците |
-| 2 | `database/02-insert-data.sql` | Пълни таблиците с данни |
-| 3 | `database/03-programmability.sql` | Създава функциите, процедурите и тригерите |
-| 4 | `warehouse/01-create-warehouse.sql` | Създава схемата `dw` и DW таблиците |
-| 5 | `warehouse/02-load-warehouse.sql` | Зарежда DW от оперативната база |
-| 6 | `warehouse/03-validate-warehouse.sql` | Проверява DW и показва броя редове |
-| 7 | `tests/01-programmability-tests.sql` | По желание: тества процедурите, функциите и тригерите и връща всички промени назад |
-
-3. Отворете `powerbi/Airbnb_Analytics.pbix` и обновете данните от `AirbnbDB` по стъпките в [powerbi/README.md](powerbi/README.md).
-
-С `sqlcmd` от папката на проекта:
-
-```bash
-sqlcmd -S localhost -U sa -P <парола> -C -i database/01-create-tables.sql
-sqlcmd -S localhost -U sa -P <парола> -C -i database/02-insert-data.sql
-sqlcmd -S localhost -U sa -P <парола> -C -i database/03-programmability.sql
-sqlcmd -S localhost -U sa -P <парола> -C -i warehouse/01-create-warehouse.sql
-sqlcmd -S localhost -U sa -P <парола> -C -i warehouse/02-load-warehouse.sql
-sqlcmd -S localhost -U sa -P <парола> -C -i warehouse/03-validate-warehouse.sql
-sqlcmd -S localhost -U sa -P <парола> -C -i tests/01-programmability-tests.sql
-```
-
-Скриптовете `database/01` и `warehouse/01` изтриват и създават таблиците наново. Затова цялата база може да се пресъздаде, като скриптовете се пуснат отново в същия ред.
-
-## Примери
-
-```sql
-USE AirbnbDB;
-
-SELECT dbo.fn_CalculateStayPrice(1, '2027-01-10', '2027-01-15');
-SELECT dbo.fn_GetAverageRating(6);
-
-DECLARE @BookingId INT;
-EXEC dbo.sp_CreateBooking 1, 7, '2027-01-10', '2027-01-15', 2, @BookingId OUTPUT;
-INSERT INTO Payments (BookingId, Amount, Method) VALUES (@BookingId, 475, 'Card');
-SELECT Status FROM Bookings WHERE BookingId = @BookingId;
-EXEC dbo.sp_CancelBooking @BookingId;
-
-SELECT TOP (10) * FROM dw.FactBookings;
-```
+Алтернативният уеб доклад се отваря чрез `dashboard/index.html`. Файлът `plotly.min.js` трябва да остане в същата папка. HTML вариантът използва демонстрационните данни, подготвени за проекта, и не прави автоматични заявки към SQL Server.

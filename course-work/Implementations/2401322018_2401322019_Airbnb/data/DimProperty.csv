@@ -1,21 +1,19 @@
 ﻿PropertyKey,PropertyName,PropertyType,PricePerNight,MaxGuests
-1,Modern apartment near Vitosha Blvd,Apartment,95.00,4
-2,Cozy studio in the center,Studio,55.00,2
-3,Old Town apartment with view,Apartment,80.00,4
-4,Guesthouse in Kapana,Guesthouse,70.00,6
-5,Sea view apartment,Apartment,110.00,4
-6,Villa with pool near the beach,Villa,250.00,8
-7,Studio next to the Sea Garden,Studio,60.00,2
-8,Family apartment in Burgas,Apartment,85.00,5
-9,Mountain chalet with fireplace,House,160.00,8
-10,Ski apartment near the gondola,Apartment,90.00,4
-11,Traditional guesthouse in Samovodska Charshia,Guesthouse,65.00,6
-12,Apartment with Tsarevets view,Apartment,75.00,3
-13,Apartment under the Acropolis,Apartment,130.00,4
-14,Plaka studio,Studio,85.00,2
-15,Seafront apartment in Thessaloniki,Apartment,100.00,4
-16,House in Ano Poli,House,140.00,6
-17,House with garden in Boyana,House,180.00,7
-18,Studio near the Roman stadium,Studio,50.00,2
-19,Luxury villa in Galata,Villa,300.00,10
-20,Guesthouse at the foot of Pirin,Guesthouse,75.00,8
+1,Central Sofia Apartment,Apartment,98,4
+2,Sofia City Studio,Studio,68,2
+3,Old Town Family House,House,145,6
+4,Sea Garden Flat,Apartment,115,4
+5,Burgas Garden Villa,Villa,210,8
+6,Thessaloniki Riverside,Apartment,125,4
+7,Kavala Port Studio,Studio,84,2
+8,Sofia Designer Loft,Loft,133,3
+9,Varna Coastal House,House,172,6
+10,Kapana Art Apartment,Apartment,105,3
+11,Burgas Compact Studio,Studio,61,2
+12,Northern Greece Villa,Villa,240,8
+13,Kavala Family Apartment,Apartment,112,5
+14,Sofia University Retreat,Apartment,92,3
+15,Plovdiv Vintage Loft,Loft,117,4
+16,Varna Panorama,Apartment,156,4
+17,Burgas Family Residence,House,138,5
+18,Thessaloniki Old Town Studio,Studio,77,2
