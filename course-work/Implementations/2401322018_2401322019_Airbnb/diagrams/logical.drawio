@@ -11,7 +11,7 @@
         <mxCell id="title" value="AIRBNB  /  LOGICAL DATA MODEL" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=45;fontStyle=1;fontColor=#1A3048;strokeColor=none;fillColor=none;connectable=0;" parent="1" vertex="1">
           <mxGeometry x="95" y="51" width="1450" height="72" as="geometry"/>
         </mxCell>
-        <mxCell id="subtitle" value="CROW'S FOOT NOTATION    |    10 ENTITIES    |    10 FOREIGN KEYS    |    SQL SERVER" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=22;fontColor=#57708C;strokeColor=none;fillColor=none;connectable=0;" parent="1" vertex="1">
+        <mxCell id="subtitle" value="CROW'S FOOT NOTATION    |    10 ENTITIES    |    10 FOREIGN KEYS" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=22;fontColor=#57708C;strokeColor=none;fillColor=none;connectable=0;" parent="1" vertex="1">
           <mxGeometry x="100" y="124" width="1800" height="45" as="geometry"/>
         </mxCell>
         <mxCell id="left-zone" value="" style="rounded=1;arcSize=2;fillColor=#EEF5FA;strokeColor=none;connectable=0;" parent="1" vertex="1">
@@ -50,7 +50,7 @@
         <mxCell id="name_Countries_CountryID" value="CountryID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Countries_CountryID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
+        <mxCell id="type_Countries_CountryID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Countries_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Countries" vertex="1">
@@ -62,7 +62,7 @@
         <mxCell id="name_Countries_Name" value="Name" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Countries_Name" value="nvarchar(100)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
+        <mxCell id="type_Countries_Name" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Countries_ISOCode" value="UQ" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
@@ -71,7 +71,7 @@
         <mxCell id="name_Countries_ISOCode" value="ISOCode" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Countries_ISOCode" value="char(2)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
+        <mxCell id="type_Countries_ISOCode" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Countries" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_Cities" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -92,7 +92,7 @@
         <mxCell id="name_Cities_CityID" value="CityID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Cities_CityID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
+        <mxCell id="type_Cities_CityID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Cities_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Cities" vertex="1">
@@ -104,7 +104,7 @@
         <mxCell id="name_Cities_CountryID" value="CountryID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Cities_CountryID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
+        <mxCell id="type_Cities_CountryID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Cities_Name" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
@@ -113,7 +113,7 @@
         <mxCell id="name_Cities_Name" value="Name" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Cities_Name" value="nvarchar(120)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
+        <mxCell id="type_Cities_Name" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Cities_3" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Cities" vertex="1">
@@ -125,7 +125,7 @@
         <mxCell id="name_Cities_PostalCode" value="PostalCode" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
           <mxGeometry x="85" y="181" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Cities_PostalCode" value="nvarchar(15)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
+        <mxCell id="type_Cities_PostalCode" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Cities" vertex="1">
           <mxGeometry x="315" y="181" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_Users" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -146,7 +146,7 @@
         <mxCell id="name_Users_UserID" value="UserID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Users_UserID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
+        <mxCell id="type_Users_UserID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Users_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Users" vertex="1">
@@ -158,7 +158,7 @@
         <mxCell id="name_Users_FirstName" value="FirstName" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Users_FirstName" value="nvarchar(80)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
+        <mxCell id="type_Users_FirstName" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Users_LastName" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
@@ -167,7 +167,7 @@
         <mxCell id="name_Users_LastName" value="LastName" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Users_LastName" value="nvarchar(80)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
+        <mxCell id="type_Users_LastName" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Users_3" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Users" vertex="1">
@@ -179,7 +179,7 @@
         <mxCell id="name_Users_Email" value="Email" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="85" y="181" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Users_Email" value="nvarchar(254)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
+        <mxCell id="type_Users_Email" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="315" y="181" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Users_Phone" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
@@ -188,7 +188,7 @@
         <mxCell id="name_Users_Phone" value="Phone" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="85" y="212" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Users_Phone" value="nvarchar(30)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
+        <mxCell id="type_Users_Phone" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="315" y="212" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Users_5" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Users" vertex="1">
@@ -200,7 +200,7 @@
         <mxCell id="name_Users_CreatedAt" value="CreatedAt" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="85" y="243" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Users_CreatedAt" value="datetime2(0)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
+        <mxCell id="type_Users_CreatedAt" value="datetime" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="315" y="243" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Users_IsVerified" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
@@ -209,7 +209,7 @@
         <mxCell id="name_Users_IsVerified" value="IsVerified" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="85" y="274" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Users_IsVerified" value="bit" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
+        <mxCell id="type_Users_IsVerified" value="boolean" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Users" vertex="1">
           <mxGeometry x="315" y="274" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_PropertyTypes" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -230,7 +230,7 @@
         <mxCell id="name_PropertyTypes_PropertyTypeID" value="PropertyTypeID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_PropertyTypes_PropertyTypeID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
+        <mxCell id="type_PropertyTypes_PropertyTypeID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_PropertyTypes_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
@@ -242,7 +242,7 @@
         <mxCell id="name_PropertyTypes_TypeName" value="TypeName" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_PropertyTypes_TypeName" value="nvarchar(80)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
+        <mxCell id="type_PropertyTypes_TypeName" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_PropertyTypes_Description" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
@@ -251,7 +251,7 @@
         <mxCell id="name_PropertyTypes_Description" value="Description" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_PropertyTypes_Description" value="nvarchar(300)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
+        <mxCell id="type_PropertyTypes_Description" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyTypes" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_Properties" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -272,7 +272,7 @@
         <mxCell id="name_Properties_PropertyID" value="PropertyID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_PropertyID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_PropertyID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Properties_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -284,7 +284,7 @@
         <mxCell id="name_Properties_HostID" value="HostID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_HostID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_HostID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Properties_CityID" value="FK" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#326B9D;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -293,7 +293,7 @@
         <mxCell id="name_Properties_CityID" value="CityID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_CityID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_CityID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Properties_3" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -305,7 +305,7 @@
         <mxCell id="name_Properties_PropertyTypeID" value="PropertyTypeID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="181" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_PropertyTypeID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_PropertyTypeID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="181" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Properties_Title" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -314,7 +314,7 @@
         <mxCell id="name_Properties_Title" value="Title" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="212" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_Title" value="nvarchar(160)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_Title" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="212" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Properties_5" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -326,7 +326,7 @@
         <mxCell id="name_Properties_Description" value="Description" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="243" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_Description" value="nvarchar(600)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_Description" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="243" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Properties_AddressLine" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -335,7 +335,7 @@
         <mxCell id="name_Properties_AddressLine" value="AddressLine" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="274" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_AddressLine" value="nvarchar(220)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_AddressLine" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="274" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Properties_7" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -347,7 +347,7 @@
         <mxCell id="name_Properties_PricePerNight" value="PricePerNight" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="305" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_PricePerNight" value="decimal(10,2)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_PricePerNight" value="decimal" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="305" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Properties_MaxGuests" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -356,7 +356,7 @@
         <mxCell id="name_Properties_MaxGuests" value="MaxGuests" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="336" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_MaxGuests" value="tinyint" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_MaxGuests" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="336" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Properties_9" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -368,7 +368,7 @@
         <mxCell id="name_Properties_Bedrooms" value="Bedrooms" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="367" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_Bedrooms" value="tinyint" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_Bedrooms" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="367" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Properties_Bathrooms" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -377,7 +377,7 @@
         <mxCell id="name_Properties_Bathrooms" value="Bathrooms" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="398" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_Bathrooms" value="tinyint" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_Bathrooms" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="398" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Properties_11" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -389,7 +389,7 @@
         <mxCell id="name_Properties_IsActive" value="IsActive" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="429" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_IsActive" value="bit" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_IsActive" value="boolean" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="429" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Properties_CreatedAt" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
@@ -398,7 +398,7 @@
         <mxCell id="name_Properties_CreatedAt" value="CreatedAt" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="85" y="460" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Properties_CreatedAt" value="datetime2(0)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
+        <mxCell id="type_Properties_CreatedAt" value="datetime" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Properties" vertex="1">
           <mxGeometry x="315" y="460" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_Amenities" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -419,7 +419,7 @@
         <mxCell id="name_Amenities_AmenityID" value="AmenityID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Amenities_AmenityID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
+        <mxCell id="type_Amenities_AmenityID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Amenities_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Amenities" vertex="1">
@@ -431,7 +431,7 @@
         <mxCell id="name_Amenities_Name" value="Name" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Amenities_Name" value="nvarchar(80)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
+        <mxCell id="type_Amenities_Name" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Amenities_Category" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
@@ -440,7 +440,7 @@
         <mxCell id="name_Amenities_Category" value="Category" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Amenities_Category" value="nvarchar(60)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
+        <mxCell id="type_Amenities_Category" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Amenities" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_PropertyAmenities" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -461,7 +461,7 @@
         <mxCell id="name_PropertyAmenities_PropertyID" value="PropertyID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyAmenities" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_PropertyAmenities_PropertyID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyAmenities" vertex="1">
+        <mxCell id="type_PropertyAmenities_PropertyID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyAmenities" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_PropertyAmenities_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_PropertyAmenities" vertex="1">
@@ -473,7 +473,7 @@
         <mxCell id="name_PropertyAmenities_AmenityID" value="AmenityID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyAmenities" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_PropertyAmenities_AmenityID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyAmenities" vertex="1">
+        <mxCell id="type_PropertyAmenities_AmenityID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_PropertyAmenities" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_Bookings" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -494,7 +494,7 @@
         <mxCell id="name_Bookings_BookingID" value="BookingID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Bookings_BookingID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
+        <mxCell id="type_Bookings_BookingID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Bookings_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Bookings" vertex="1">
@@ -506,7 +506,7 @@
         <mxCell id="name_Bookings_PropertyID" value="PropertyID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Bookings_PropertyID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
+        <mxCell id="type_Bookings_PropertyID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Bookings_GuestID" value="FK" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#326B9D;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
@@ -515,7 +515,7 @@
         <mxCell id="name_Bookings_GuestID" value="GuestID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Bookings_GuestID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
+        <mxCell id="type_Bookings_GuestID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Bookings_3" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Bookings" vertex="1">
@@ -548,7 +548,7 @@
         <mxCell id="name_Bookings_GuestCount" value="GuestCount" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="85" y="243" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Bookings_GuestCount" value="tinyint" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
+        <mxCell id="type_Bookings_GuestCount" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="315" y="243" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Bookings_TotalAmount" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
@@ -557,7 +557,7 @@
         <mxCell id="name_Bookings_TotalAmount" value="TotalAmount" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="85" y="274" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Bookings_TotalAmount" value="decimal(12,2)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
+        <mxCell id="type_Bookings_TotalAmount" value="decimal" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="315" y="274" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Bookings_7" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Bookings" vertex="1">
@@ -569,7 +569,7 @@
         <mxCell id="name_Bookings_Status" value="Status" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="85" y="305" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Bookings_Status" value="nvarchar(20)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
+        <mxCell id="type_Bookings_Status" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="315" y="305" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Bookings_CreatedAt" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
@@ -578,7 +578,7 @@
         <mxCell id="name_Bookings_CreatedAt" value="CreatedAt" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="85" y="336" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Bookings_CreatedAt" value="datetime2(0)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
+        <mxCell id="type_Bookings_CreatedAt" value="datetime" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Bookings" vertex="1">
           <mxGeometry x="315" y="336" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_Payments" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -599,7 +599,7 @@
         <mxCell id="name_Payments_PaymentID" value="PaymentID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Payments_PaymentID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
+        <mxCell id="type_Payments_PaymentID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Payments_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Payments" vertex="1">
@@ -611,7 +611,7 @@
         <mxCell id="name_Payments_BookingID" value="BookingID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Payments_BookingID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
+        <mxCell id="type_Payments_BookingID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Payments_Amount" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
@@ -620,7 +620,7 @@
         <mxCell id="name_Payments_Amount" value="Amount" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Payments_Amount" value="decimal(12,2)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
+        <mxCell id="type_Payments_Amount" value="decimal" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Payments_3" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Payments" vertex="1">
@@ -632,7 +632,7 @@
         <mxCell id="name_Payments_PaymentMethod" value="PaymentMethod" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="85" y="181" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Payments_PaymentMethod" value="nvarchar(30)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
+        <mxCell id="type_Payments_PaymentMethod" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="315" y="181" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Payments_Status" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
@@ -641,7 +641,7 @@
         <mxCell id="name_Payments_Status" value="Status" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="85" y="212" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Payments_Status" value="nvarchar(20)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
+        <mxCell id="type_Payments_Status" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="315" y="212" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Payments_5" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Payments" vertex="1">
@@ -653,7 +653,7 @@
         <mxCell id="name_Payments_PaidAt" value="PaidAt" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="85" y="243" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Payments_PaidAt" value="datetime2(0)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
+        <mxCell id="type_Payments_PaidAt" value="datetime" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="315" y="243" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Payments_TransactionRef" value="UQ" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
@@ -662,7 +662,7 @@
         <mxCell id="name_Payments_TransactionRef" value="TransactionRef" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="85" y="274" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Payments_TransactionRef" value="nvarchar(80)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
+        <mxCell id="type_Payments_TransactionRef" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="315" y="274" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Payments_7" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Payments" vertex="1">
@@ -674,7 +674,7 @@
         <mxCell id="name_Payments_CreatedAt" value="CreatedAt" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="85" y="305" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Payments_CreatedAt" value="datetime2(0)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
+        <mxCell id="type_Payments_CreatedAt" value="datetime" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Payments" vertex="1">
           <mxGeometry x="315" y="305" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="box_Reviews" value="" style="rounded=0;html=1;container=1;collapsible=0;fillColor=#FFFFFF;strokeColor=#B7C9D8;strokeWidth=1.7;shadow=1;" parent="1" vertex="1">
@@ -695,7 +695,7 @@
         <mxCell id="name_Reviews_ReviewID" value="ReviewID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="85" y="88" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Reviews_ReviewID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
+        <mxCell id="type_Reviews_ReviewID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="315" y="88" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Reviews_1" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Reviews" vertex="1">
@@ -707,7 +707,7 @@
         <mxCell id="name_Reviews_BookingID" value="BookingID" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="85" y="119" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Reviews_BookingID" value="int" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
+        <mxCell id="type_Reviews_BookingID" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="315" y="119" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Reviews_Rating" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
@@ -716,7 +716,7 @@
         <mxCell id="name_Reviews_Rating" value="Rating" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="85" y="150" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Reviews_Rating" value="tinyint" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
+        <mxCell id="type_Reviews_Rating" value="integer" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="315" y="150" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="alt_Reviews_3" value="" style="rounded=0;fillColor=#F5F8FB;strokeColor=none;connectable=0;" parent="box_Reviews" vertex="1">
@@ -728,7 +728,7 @@
         <mxCell id="name_Reviews_Comment" value="Comment" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="85" y="181" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Reviews_Comment" value="nvarchar(800)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
+        <mxCell id="type_Reviews_Comment" value="string" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="315" y="181" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="key_Reviews_CreatedAt" value="" style="text;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#7E8794;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
@@ -737,7 +737,7 @@
         <mxCell id="name_Reviews_CreatedAt" value="CreatedAt" style="text;html=1;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontColor=#20354B;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="85" y="212" width="225" height="27" as="geometry"/>
         </mxCell>
-        <mxCell id="type_Reviews_CreatedAt" value="datetime2(0)" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
+        <mxCell id="type_Reviews_CreatedAt" value="datetime" style="text;html=1;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontColor=#64788E;strokeColor=none;fillColor=none;connectable=0;" parent="box_Reviews" vertex="1">
           <mxGeometry x="315" y="212" width="130" height="27" as="geometry"/>
         </mxCell>
         <mxCell id="fk_Cities_CountryID" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7089A0;strokeWidth=2.6;startArrow=ERone;startFill=0;startSize=18;endArrow=ERmany;endFill=0;endSize=21;" edge="1" parent="1" source="box_Countries" target="box_Cities">
